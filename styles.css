@@ -1,0 +1,244 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("istockphoto-1364601532-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+	background-color: #FBFCFC;
+	
+}
+
+header {
+    background-color:  #c0bb72;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 0.9 rem;
+    color: #444;
+    padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color:#556B2F;
+    border-bottom: 2px solid #556B2F;
+    padding-bottom: 5px;
+	padding-top: 5px;
+}   
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.recipe {
+    margin-bottom: 20px;
+	
+}
+.contribute{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #c0bb72;
+    color: #fff;
+}
+textarea {
+	max-width: 280px;
+}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  padding-bottom: 5px;
+}
+.item{
+  width:200px;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float:left;
+  font-size: 15px;
+  padding-top: 20px;
+  
+}
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 15px;
+  
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.img {
+  width: 20%;
+  height: 30%;
+  object-fit: cover;
+
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+	
+	
+
+.container {
+  max-width: 800px;
+  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.container:hover .img {
+  opacity: 0.5;
+}
+
+.container .img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.2);
+  z-index: 99;
+  opacity: 1;
+}
+.bajra{border:solid 0.5px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+	max-height:100%;max-width:100%;
+	}
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:10vh 10vw;
+  height:50vh;
+  padding:4vmin;
+  position:relative;
+  text-align:center;
+  float:right;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
